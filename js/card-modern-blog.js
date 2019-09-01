@@ -173,7 +173,6 @@ var Card = (function (window) {
             clearProps: 'all',
             className: '-=' + CLASSES.containerClosed,
             onUpdate: callback.bind(this, track),
-
             // Fix IE: if the image is set to fixed when CLASSES.containerClosed
             // is removed IE doesn't follow the tween, fix by setting
             // the image position to fixed when tween is completed.
@@ -206,7 +205,7 @@ var Card = (function (window) {
 
         var tween = TweenLite.to(this._content, 1, {
             y: 0,
-            clearProps: 'all',
+            clearProps: 'fix',
             ease: Expo.easeInOut
         });
 

@@ -2,11 +2,12 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+  <html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <title>Saraquesitos</title>
     <meta name="description" content="{{ site.description }}"/>
     <meta name="keywords" content="{{ site.keywords }}"/>
@@ -17,6 +18,7 @@ layout: compress
     <link rel="stylesheet" type="text/css" href="css/modern-blog.css"/>
     <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140026956-1"></script>
    <script>
@@ -26,76 +28,241 @@ layout: compress
 
      gtag('config', 'UA-140026956-1');
    </script>
-</head>
+ </head>
 
-<body class="body">
-<div class="container">
-    <header class="header">
-        <h1>Sara's Quesitos LLC<span>The Best Pastries of Metroplex</span></h1>
+  <body class="body">
+     <div class="container">
+       <header class="header">
+          <h1>Sara's Quesitos LLC<span>The Best Pastries of Metroplex</span></h1>
+       </header>
 
-
-    <div class="content">
-        <!-- trianglify pattern container -->
-        <div class="pattern pattern--hidden"></div>
-        <!-- cards -->
-        <div class="wrapper">
-            {% for post in site.posts %}
-            <div class="card" data-id="{{ post.id }}">
-                <div class="card__container card__container--closed">
-                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
-                         preserveAspectRatio="xMidYMid slice">
-                        <defs>
-                            <clipPath id="{{ post.id }}-clip-path">
-                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
-                            </clipPath>
-                        </defs>
-                        <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
-                               xlink:href="{{ post.image }}"></image>
-                    </svg>
-                    <div class="card__content">
-                        <i class="card__btn-close fa fa-times"></i>
-                        <div class="card__caption">
-                            <h2 class="card__title">{{ post.title }}</h2>
-                            <p class="card__subtitle">{{ post.subtitle }}</p>
-                        </div>
-                        <div class="card__copy">
-                            <div class="meta">
+  <div class="content">
+       <!-- trianglify pattern container -->
+       <div class="pattern pattern--hidden"></div>
+       <!-- cards -->
+       <div class="wrapper">
+           {% for post in site.posts %}
+           <div class="card" data-id="{{ post.id }}">
+               <div class="card__container card__container--closed">
+                   <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
+                        preserveAspectRatio="xMidYMid slice">
+                       <defs>
+                           <clipPath id="{{ post.id }}-clip-path">
+                               <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                           </clipPath>
+                       </defs>
+                       <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
+                              xlink:href="{{ post.image }}"></image>
+                   </svg>
+                   <div class="card__content">
+                       <i class="card__btn-close fa fa-times"></i>
+                       <div class="card__caption">
+                           <h2 class="card__title">{{ post.title }}</h2>
+                           <p class="card__subtitle">{{ post.subtitle }}</p>
+                       </div>
+                       <div class="card__copy">
+                           <div class="meta">
+                               <img class="meta__avatar" src="{{ post.avatar }}"/>
                                <span class="meta__author">{{ post.author }}</span>
-                            </div>
-                            {{ post.content }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            <!-- /cards -->
-        </div>
-    </div>
-    <!-- /container -->
+                               <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                           </div>
+                           {{ post.content }}
+                       </div>
+                   </div>
+               </div>
+           </div>
+           {% endfor %}
+           <!-- /cards -->
+       </div>
+   </div>
+   <!-- /container -->
 </div>
-<!-- JS -->
-<script src="js/vendors/trianglify.min.js"></script>
-<script src="js/vendors/TweenMax.min.js"></script>
-<script src="js/vendors/ScrollToPlugin.min.js"></script>
-<script src="js/vendors/cash.min.js"></script>
-<script src="js/card-modern-blog.js"></script>
-<script src="js/modern-blog.js"></script>
+
+
+  <script src="js/vendors/trianglify.min.js"></script>
+  <script src="js/vendors/TweenMax.min.js"></script>
+  <script src="js/vendors/ScrollToPlugin.min.js"></script>
+  <script src="js/vendors/cash.min.js"></script>
+  <script src="js/card-modern-blog.js"></script>
+  <script src="js/modern-blog.js"></script>
 
 
 
-   <section id="social-media">
+  <section id="blog">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="block">
+                      <h1 class="heading">Latest <span>From</span> the <span>Blog</span></h1>
+                      <ul>
+                          <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
+                              <div class="blog-img">
+                                  <img src="images/blog/blog-img-1.jpg" alt="blog-img">
+                              </div>
+                              <div class="content-right">
+                                  <h3>Homestyle Chicken Pot Pie</h3>
+                                  <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                              </div>
+                          </li>
+                          <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="400ms">
+                              <div class="blog-img">
+                                  <img src="images/blog/blog-img-2.jpg" alt="blog-img">
+                              </div>
+                              <div class="content-right">
+                                  <h3>Homestyle Chicken Pot Pie</h3>
+                                  <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                              </div>
+                          </li>
+                          <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="500ms">
+                              <div class="content-left">
+                                  <h3>Homestyle Chicken Pot Pie</h3>
+                                  <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                              </div>
+                              <div class="blog-img-2">
+                                  <img src="images/blog/blog-img-3.jpg" alt="blog-img">
+                              </div>
+                          </li>
+                          <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="600ms">
+                              <div class="content-left">
+                                  <h3>Homestyle Chicken Pot Pie</h3>
+                                  <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                              </div>
+                              <div class="blog-img-2">
+                                  <img src="images/blog/blog-img-4.jpg" alt="blog-img">
+                              </div>
+                          </li>
+                          <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="700ms">
+                              <div class="blog-img">
+                                  <img src="images/blog/blog-img-5.jpg" alt="blog-img">
+                              </div>
+                              <div class="content-right">
+                                  <h3>Homestyle Chicken Pot Pie</h3>
+                                  <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                              </div>
+                          </li>
+                          <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
+                              <div class="blog-img">
+                                  <img src="images/blog/blog-img-6.jpg" alt="blog-img">
+                              </div>
+                              <div class="content-right">
+                                  <h3>Homestyle Chicken Pot Pie</h3>
+                                  <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div><!-- .col-md-12 close -->
+          </div><!-- .row close -->
+      </div><!-- .containe close -->
+  </section><!-- #blog close -->
+
+
+
+  <section id="price">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="block">
+                      <h1 class="heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">our <span>MENU</span> the <span>PRICE</span></h1>
+                      <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">The price varies by quantity, all prices below vary by order and quantity. </p>
+                      <div class="pricing-list">
+                          <div class="title">
+                              <h3> <span>Pastries</span></h3>
+                          </div>
+                          <ul>
+                              <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                                  <div class="item">
+                                      <div class="item-title">
+                                          <h2>Sweet Cheese Puff</h2>
+                                          <div class="border-bottom"></div>
+                                          <span>$ 12.00</span>
+                                      </div>
+                                      <p></p>
+                                  </div>
+                              </li>
+                              <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                                  <div class="item">
+                                      <div class="item-title">
+                                          <h2>Guava Turnover</h2>
+                                          <div class="border-bottom"></div>
+                                          <span>$ 12.00</span>
+                                      </div>
+                                      <p></p>
+                                  </div>
+                              </li>
+                              <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                                  <div class="item">
+                                      <div class="item-title">
+                                          <h2>Bavarian Tornillos</h2>
+                                          <div class="border-bottom"></div>
+                                          <span>$ 12.00</span>
+                                      </div>
+                                      <p></p>
+                                  </div>
+                              </li>
+                              <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
+                                  <div class="item">
+                                      <div class="item-title">
+                                          <h2>Fruit Kolaches</h2>
+                                          <div class="border-bottom"></div>
+                                          <span>$ 12.00</span>
+                                      </div>
+                                      <p></p>
+                                  </div>
+                             </li>
+                              <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="700ms">
+                                  <div class="item">
+                                      <div class="item-title">
+                                          <h2>Bread Pudding</h2>
+                                          <div class="border-bottom"></div>
+                                          <span>$ 8.00</span>
+                                      </div>
+                                      <p></p>
+                                  </div>
+                              </li>
+                              <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
+                                  <div class="item">
+                                      <div class="item-title">
+                                          <h2>Assorted Trays</h2>
+                                          <div class="border-bottom"></div>
+                                          <span>$ 7.00</span>
+                                      </div>
+                                      <p></p>
+                                  </div>
+                              </li>
+                              <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
+                                  <div class="item">
+                                      <div class="item-title">
+                                          <h2>Mallorcas</h2>
+                                          <div class="border-bottom"></div>
+                                          <span>$ 10.00</span>
+                                      </div>
+                                      <p></p>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div><!-- .col-md-12 close -->
+          </div><!-- .row close -->
+      </div><!-- .containe close -->
+  </section><!-- #price close -->
+
+
+
+ <section id="social-media">
    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com/Saras-Quesitos-LLC-828540993858203/reviews/?ref=page...%2F&amp;tabs=timeline&amp;width=280&amp;height=460&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId"
-    style="border:solid" scrolling="si" allowtransparency="True"  width="280" height="460" frameborder="0"></iframe>
+     style="border:solid" scrolling="si" allowtransparency="True"  width="280" height="460" frameborder="0"></iframe>
 
-     <nav class="links">
-      <a href="https://twitter.com/sarasquesitos?lang=en"><i class="fa fa-twitter-square fa-3x"></i></a>
-      <a href="https://www.instagram.com/sarasquesitosllc/"><i class="fa fa-instagram fa-3x"></i></a>
-   </section>
+   <nav class="links">
+    <a href="https://twitter.com/sarasquesitos?lang=en"><i class="fa fa-twitter-square fa-3x"></i></a>
+    <a href="https://www.instagram.com/sarasquesitosllc/"><i class="fa fa-instagram fa-3x"></i></a>
+    </nav>
+ </section>
 
-
-         <section id="contact-us">
-         <h3>MakeYour Order</h3>
+ <section id="contact-us">
+    <h3>MakeYour Order</h3>
       <form action="https://formspree.io/josue.rosario8@gmail.com" method="POST">
           <label>Pastries:</label>
         <select name="Pastries" required>
@@ -107,49 +274,44 @@ layout: compress
           <option value="Bandejas Surtidas">Bandejas Surtidas</option>
           <option value="Mallorcas">Mallorcas</option>
           <option value="Another Pastries">Another Pastries</option>
-        </select>
-        <label>Quantity:</label>
-        <select name="Quantity" required>
+       </select>
+          <label>Quantity:</label>
+      <select name="Quantity" required>
           <option value="6">6</option>
           <option value="12">12</option>
           <option value="24">24</option>
           <option value="Another Quantity">Another Quantity</option>
-        </select>
-         <label>Your Name:</label>
-         <input name="name" type="text" required/>
-         <label>Your Email: </label>
-         <input name="_replyto" type="email" required/>
-         <label>Comments:</label>
-         <input name="Comments" type="message" required/>
-        <button>submit</button>
-      </form>
-      </section>
+      </select>
+          <label>Your Name:</label>
+          <input name="name" type="text" required/>
+          <label>Your Email: </label>
+          <input name="_replyto" type="email" required/>
+          <label>Comments:</label>
+          <input name="Comments" type="message" required/>
+      <button>submit</button>
+    </form>
+ </section>
 
-     <section id="address">
+ <section id="address">
      <address>
-      Email<a href="mailto:Sarasquesitos@gmail.com"><strong>~Sara Rosado~</strong></a><br>
-      Contact Us (817)706-6524<br>
-      Arlington,Tx<br>
+       Email<a href="mailto:Sarasquesitos@gmail.com"><strong>~Sara Rosado~</strong></a><br>
+       <br>Contact Us (817)706-6524<br>
+       Arlington,Tx<br>
     </address>
-    </section>
+ </section>
 
 
-   <!--
-        footer-bottom  start
-        ============================= -->
-        <footer id="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="block">
-                            <p>Copyright &copy; 2019 - All Rights Reserved.Design and Developed By <a href=mailto:josue.rosario8@gmail.com">JosueRosario</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+ <footer id="footer-bottom">
+       <div class="container">
+          <div class="row">
+              <div class="col-md-12 col-sm-12">
+                  <div class="block">
+                      <p>Copyright &copy; 2019 - All Rights Reserved.Design and Developed By <a href=mailto:josue.rosario8@gmail.com">JosueRosario</a></p
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
 
 </body>
-
-
 </html>
