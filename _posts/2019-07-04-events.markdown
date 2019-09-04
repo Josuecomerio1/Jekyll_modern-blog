@@ -1,7 +1,6 @@
 ---
 title:  "Events"
 subtitle: ""
-image: "img/newbusiness1.jpg"
 permalink: 'events'
 ---
 

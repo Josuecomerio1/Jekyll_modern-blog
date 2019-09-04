@@ -1,7 +1,6 @@
 ---
 title:  "About Us"
 subtitle: ""
-image: "img/newbusiness2.jpg"
 permalink: 'about-us'
 ---
 

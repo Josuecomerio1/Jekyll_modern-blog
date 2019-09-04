@@ -1,7 +1,6 @@
 ---
 title:  "Bakery Menu"
 subtitle: ""
-image: "img/pastelillos.jpg"
 permalink: 'bakery-menu'
 ---
 

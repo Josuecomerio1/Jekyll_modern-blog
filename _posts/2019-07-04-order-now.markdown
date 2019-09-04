@@ -1,7 +1,6 @@
 ---
 title:  "Order Now"
 subtitle: ""
-image: "img/newbusiness1.jpg"
 permalink: 'order-now'
 ---
 
