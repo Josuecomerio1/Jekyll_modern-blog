@@ -2,6 +2,7 @@
 title:  "Bakery Menu"
 subtitle: ""
 permalink: 'bakery-menu'
+image: "img/lll.jpg"
 ---
 
 <section id="price">

@@ -2,6 +2,7 @@
 title:  "Order Now"
 subtitle: ""
 permalink: 'order-now'
+image: "img/newbusiness2.jpg"
 ---
 
 <section id="contact-us">

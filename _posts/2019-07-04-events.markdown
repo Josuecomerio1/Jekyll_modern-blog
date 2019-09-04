@@ -2,6 +2,7 @@
 title:  "Events"
 subtitle: ""
 permalink: 'events'
+image: "img/newbusiness1.jpg"
 ---
 
 ### Specials Events:

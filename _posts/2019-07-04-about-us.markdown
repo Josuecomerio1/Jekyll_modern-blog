@@ -2,6 +2,7 @@
 title:  "About Us"
 subtitle: ""
 permalink: 'about-us'
+image: "img/lll.jpg"
 ---
 
 ### Purposes of this company:
