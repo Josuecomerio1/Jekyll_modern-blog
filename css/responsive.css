@@ -1,10 +1,10 @@
-#social-media nav link {
-  margin: auto;
-  display: block;
+ #link a {
+text-align: center;
 }
 
-#address address {
-text-align: center;
+#address {
+  margin:auto;
+  display: block;
 
 }
 
